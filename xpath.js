@@ -2381,7 +2381,7 @@ var xpath = (typeof exports === 'undefined') ? {} : exports;
         {
             matches: function (n, xpc) {
                 return NodeTest.isNodeType([1, 2, XPathNamespace.XPATH_NAMESPACE_NODE])(n) &&
-                    NodeTest.nameSpaceMatches(this.prefix, xpc, n) &&
+                    // NodeTest.nameSpaceMatches(this.prefix, xpc, n) &&
                     NodeTest.localNameMatches(this.localName, xpc, n);
             },
             toString: function () {
